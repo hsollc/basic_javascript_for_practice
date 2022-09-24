@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>NINE_NINE_DAN</title>
+  <style>
+    h1{
+     color : red;
+    }
+
+     h2{
+     color : blue;
+    }
+  </style>
+</head>
+<body>
+<div>
+   <script>
+      while(true) {
+               var num=window.prompt("Please insert a number from 1 to 9.");
+               if (num >=1 && num <= 9){
+               document.writeln('<h1>'+ num+'     '+'NINE_NINE_DAN'+'</h1>');
+               document.writeln("------------------------------------------------------");
+               for(var i=1; i<=9; i++){
+               document.writeln('<h2>'+num+'x'+i+'='+(num*i)+'</h2>');
+               }
+               break;
+               }
+               else {
+                    document.writeln("Would you please kind enough to insert a number from 1 to 9!");
+               }
+      }
+
+   </script>
+</div>
+</body>
+</html>
