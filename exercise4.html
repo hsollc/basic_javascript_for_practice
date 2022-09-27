@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise4</title>
+    <style>
+        body {
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>이벤트 실습처리</h1>
+<hr>
+
+<button onclick="updateBtnImg(0);">맑음</button>
+<button onclick="updateBtnImg(1);">흐림</button>
+<button onclick="updateBtnImg(2);">비</button>
+<hr>
+
+<img id="btnImg" src="" width="300">
+
+<script>
+    function updateBtnImg(a) {
+    var dom = document.getElementById("btnImg");
+    var imgNum = ["sun", "cloud", "rain"]
+<!--    console.log(imgNum[0])-->
+
+    dom.src = "./images1/" + imgNum[a]+".png";
+    }
+</script>
+</body>
+</html>
